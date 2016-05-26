@@ -11,10 +11,10 @@ CD %~dp0
 REM -- Configure our paths
 SET SITE=http://cygwin.mirrors.pair.com/
 SET LOCALDIR=%CD%
-SET ROOTDIR=C:/cygwin
+SET ROOTDIR=C:/cygwin64
  
 REM -- These are the packages we will install (in addition to the default packages)
-SET PACKAGES=mintty,wget,ctags,diffutils,git,git-completion,git-svn,stgit,mercurial
+SET PACKAGES=mintty,gcc-devel,gnuplot,make,automake,lapack,hdf5,guile,gsl-devel,indent,gmp,libunistring,pkg-config,ffi,bdw,libgc,libpng
 REM -- These are necessary for apt-cyg install, do not change. Any duplicates will be ignored.
 SET PACKAGES=%PACKAGES%,wget,tar,gawk,bzip2,subversion
  
